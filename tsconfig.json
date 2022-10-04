@@ -18,10 +18,10 @@
       "vitest",
       "vite/client",
       "vue/ref-macros",
-      "vite-plugin-pages/client",
       "vite-plugin-vue-component-preview/client",
       "vite-plugin-vue-layouts/client",
-      "vite-plugin-pwa/client"
+      "vite-plugin-pwa/client",
+      "./typed-router.d.ts"
     ],
     "paths": {
       "~/*": ["src/*"]

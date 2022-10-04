@@ -5,7 +5,7 @@ const name = $ref(user.savedName)
 const router = useRouter()
 const go = () => {
   if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
+    router.push({ name: '/hi/[name]', params: { name } })
 }
 
 const { t } = useI18n()
