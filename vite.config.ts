@@ -14,6 +14,7 @@ import Inspect from 'vite-plugin-inspect'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 export default defineConfig({
   resolve: {
@@ -41,11 +42,11 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        'vue-router',
         'vue-i18n',
         'vue/macros',
         '@vueuse/head',
         '@vueuse/core',
+        VueRouterAutoImports,
       ],
       dts: 'src/auto-imports.d.ts',
       dirs: [

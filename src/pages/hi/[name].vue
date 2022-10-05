@@ -7,6 +7,12 @@ const { t } = useI18n()
 watchEffect(() => {
   user.setNewName(props.name)
 })
+
+definePage({
+  meta: {
+    hello: 'Vue.js DE',
+  },
+})
 </script>
 
 <template>
